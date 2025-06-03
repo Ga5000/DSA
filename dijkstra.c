@@ -118,7 +118,8 @@ void dijkstra(const int source){
 
     for(int count = 0; count < V; count++){
         int minDistance = INF;
-        int u = -1;
+
+        int u = -1; // unvisited node with the minimum distance
 
         for(int i = 0; i < V; i++){
             if(!visited[i] && distance[i] < minDistance){
